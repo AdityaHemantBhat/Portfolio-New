@@ -1,4 +1,4 @@
-import { Music, Mic, Drama, PenTool } from "lucide-react";
+import { GitBranch, BookOpen, Code, Bug, Zap } from "lucide-react";
 import { usePortfolio } from "../context/PortfolioContext";
 
 function Hobbies() {
@@ -6,16 +6,18 @@ function Hobbies() {
 
   const getIcon = (iconName) => {
     switch (iconName) {
-      case "Music":
-        return Music;
-      case "Mic":
-        return Mic;
-      case "Drama":
-        return Drama;
-      case "PenTool":
-        return PenTool;
+      case "GitBranch":
+        return GitBranch;
+      case "BookOpen":
+        return BookOpen;
+      case "Code":
+        return Code;
+      case "Bug":
+        return Bug;
+      case "Zap":
+        return Zap;
       default:
-        return Music;
+        return Code;
     }
   };
 
@@ -23,10 +25,10 @@ function Hobbies() {
     <section className="bg-stone-100 py-12 md:py-20">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-black mb-8 md:mb-16">
-          Hobbies & Interests
+          Coding Interests
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 justify-items-center">
           {hobbies.map((hobby, index) => {
             const IconComponent = getIcon(hobby.icon);
             return (

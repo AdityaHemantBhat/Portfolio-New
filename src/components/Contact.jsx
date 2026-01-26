@@ -66,7 +66,7 @@ const Contact = ({ isOpen, onClose }) => {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-8 md:mb-12 animate-fade-in-up">
               <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-serif text-white mb-4 animate-slide-in-left">
-                Get In Touch
+                Let's Cook
               </h1>
               <div className="w-16 md:w-24 h-0.5 md:h-1 bg-yellow-400 mx-auto mb-4 md:mb-6 animate-slide-in-right delay-300"></div>
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 max-w-2xl mx-auto animate-fade-in-up delay-500">

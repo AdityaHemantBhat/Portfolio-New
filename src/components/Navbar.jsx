@@ -80,7 +80,7 @@ const Navbar = ({ onWorkClick, onContactClick }) => {
               onClick={onContactClick}
               className="bg-yellow-400 text-black px-3 md:px-6 py-1.5 md:py-2 rounded-full font-medium hover:bg-yellow-300 transition-all duration-300 text-xs md:text-base hover:scale-105 hover:shadow-lg"
             >
-              Get in touch!
+              Let's Cook!
             </button>
           </div>
 
@@ -124,7 +124,7 @@ const Navbar = ({ onWorkClick, onContactClick }) => {
                   onClick={handleContactClick}
                   className="block w-full bg-yellow-400 text-black px-6 py-3 rounded-full font-medium hover:bg-yellow-300 transition-colors text-lg mt-6"
                 >
-                  Get in touch!
+                  Let's Cook!
                 </button>
               </div>
             </div>

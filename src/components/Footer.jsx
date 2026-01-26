@@ -1,7 +1,7 @@
 import { Github, Instagram, Linkedin, Mail, MapPin, Heart } from "lucide-react";
 import { usePortfolio } from "../context/PortfolioContext";
 
-const Footer = () => {
+const Footer = ({ onWorkClick, onContactClick }) => {
   const { personalInfo } = usePortfolio();
   const currentYear = new Date().getFullYear();
 
@@ -43,10 +43,16 @@ const Footer = () => {
               >
                 Resume
               </a>
-              <button className="block text-gray-300 hover:text-yellow-400 transition-colors text-sm text-left">
+              <button
+                onClick={onWorkClick}
+                className="block text-gray-300 hover:text-yellow-400 transition-colors text-sm text-left"
+              >
                 Work
               </button>
-              <button className="block text-gray-300 hover:text-yellow-400 transition-colors text-sm text-left">
+              <button
+                onClick={onContactClick}
+                className="block text-gray-300 hover:text-yellow-400 transition-colors text-sm text-left"
+              >
                 Contact
               </button>
             </div>

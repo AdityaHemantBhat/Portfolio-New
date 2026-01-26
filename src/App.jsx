@@ -41,7 +41,7 @@ function App() {
         <Skills />
         <Languages />
         <Hobbies />
-        <Footer />
+        <Footer onWorkClick={openWork} onContactClick={openContact} />
       </div>
 
       <Work isOpen={isWorkOpen} onClose={closeWork} />

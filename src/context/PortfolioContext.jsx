@@ -181,10 +181,11 @@ export const PortfolioProvider = ({ children }) => {
   ];
 
   const hobbies = [
-    { name: "Playing Guitar", icon: "Music" },
-    { name: "Singing", icon: "Mic" },
-    { name: "Acting", icon: "Drama" },
-    { name: "Portrait Drawing", icon: "PenTool" },
+    { name: "Open Source Contributing", icon: "GitBranch" },
+    { name: "Learning New Frameworks", icon: "BookOpen" },
+    { name: "Building Side Projects", icon: "Code" },
+    { name: "Bug Hunting & Debugging", icon: "Bug" },
+    { name: "Code Optimization", icon: "Zap" },
   ];
 
   const value = {
