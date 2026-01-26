@@ -99,7 +99,7 @@ const Contact = ({ isOpen, onClose }) => {
                           onClick={() =>
                             copyToClipboard(personalInfo.email, "email")
                           }
-                          className="p-2 hover:bg-white/10 rounded-lg transition-colors flex-shrink-0"
+                          className="p-2 hover:bg-white/10 rounded-lg transition-colors shrink-0"
                         >
                           {copiedItem === "email" ? (
                             <Check size={18} className="text-green-400" />
@@ -139,7 +139,7 @@ const Contact = ({ isOpen, onClose }) => {
                           onClick={() =>
                             copyToClipboard(personalInfo.phone, "phone")
                           }
-                          className="p-2 hover:bg-white/10 rounded-lg transition-colors flex-shrink-0"
+                          className="p-2 hover:bg-white/10 rounded-lg transition-colors shrink-0"
                         >
                           {copiedItem === "phone" ? (
                             <Check size={18} className="text-green-400" />

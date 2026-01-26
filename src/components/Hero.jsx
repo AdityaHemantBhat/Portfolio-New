@@ -28,8 +28,8 @@ const Hero = ({ onWorkClick, onContactClick }) => {
                 <p className="text-white text-sm md:text-base leading-relaxed">
                   I design and develop clean, functional, and accessible digital
                   experiences. My approach is rooted in research, logic, and
-                  simplicity, ensuring every solution is both practical and
-                  user-focused.
+                  simplicity, ensuring every solution is both practical and user
+                  focused.
                 </p>
               </div>
             </div>

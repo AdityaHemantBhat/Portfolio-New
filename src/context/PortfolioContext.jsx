@@ -38,7 +38,7 @@ export const PortfolioProvider = ({ children }) => {
       id: 3,
       title: "Kanban Task Board",
       description:
-        "Interactive Kanban board application built with vanilla HTML, CSS, and JavaScript featuring drag-and-drop functionality, task management, and local storage persistence. Clean UI with smooth animations and responsive design for efficient project workflow management.",
+        "Interactive Kanban board application built with vanilla HTML, CSS, and JavaScript featuring drag and drop functionality, task management, and local storage persistence. Clean UI with smooth animations and responsive design for efficient project workflow management.",
       image: "/Kanban_Board.png",
       technologies: [
         "HTML5",
@@ -55,7 +55,7 @@ export const PortfolioProvider = ({ children }) => {
       id: 4,
       title: "Restaurant Website",
       description:
-        "Modern restaurant website built with pure HTML and CSS featuring elegant design, responsive layout, and smooth animations. Includes menu showcase, gallery section, contact information, and mobile-first approach with clean typography and visual hierarchy.",
+        "Modern restaurant website built with pure HTML and CSS featuring elegant design, responsive layout, and smooth animations. Includes menu showcase, gallery section, contact information, and mobile first approach with clean typography and visual hierarchy.",
       image: "/Res_home.png",
       technologies: ["HTML5", "CSS3", "Flexbox", "CSS Grid", "Media Queries"],
       liveLink:
@@ -68,7 +68,7 @@ export const PortfolioProvider = ({ children }) => {
       id: 5,
       title: "Figma-Inspired Design Tool",
       description:
-        "Interactive design tool inspired by Figma, built with JavaScript featuring canvas manipulation, text and rectangle creation, color customization, and layer management. Includes drag-and-drop functionality, real-time editing, and intuitive UI for basic graphic design workflows.",
+        "Interactive design tool inspired by Figma, built with JavaScript featuring canvas manipulation, text and rectangle creation, color customization, and layer management. Includes drag and drop functionality, real time editing, and intuitive UI for basic graphic design workflows.",
       image: "/Figma_Style.png",
       technologies: [
         "HTML5",
@@ -91,7 +91,7 @@ export const PortfolioProvider = ({ children }) => {
     phone: "+91 9529644737",
     birthDate: "29-11-2001",
     nationality: "Indian",
-    bio: "I am a self-taught Frontend Developer and Web Designer based in India, with strong experience in WordPress, Drupal, and modern JavaScript. I focus on building scalable, accessible, and performance-driven web applications while maintaining clean UI and strong usability.",
+    bio: "I am a self taught Frontend Developer and Web Designer based in India, with strong experience in WordPress, Drupal, and modern JavaScript. I focus on building scalable, accessible, and performance driven web applications while maintaining clean UI and strong usability.",
     socialLinks: {
       github: "https://github.com/AdityaHemantBhat",
       instagram: "https://www.instagram.com/adi__since2001/",
@@ -136,7 +136,7 @@ export const PortfolioProvider = ({ children }) => {
       title: "Junior Web Developer",
       period: "2024 – 2025",
       description:
-        "Handled website redesigns, JavaScript-based features, and plugin customization for client projects.",
+        "Handled website redesigns, JavaScript based features, and plugin customization for client projects.",
     },
     {
       id: 3,
@@ -184,7 +184,7 @@ export const PortfolioProvider = ({ children }) => {
     { name: "Open Source Contributing", icon: "GitBranch" },
     { name: "Learning New Frameworks", icon: "BookOpen" },
     { name: "Building Side Projects", icon: "Code" },
-    { name: "Bug Hunting & Debugging", icon: "Bug" },
+    { name: "Bug Hunting and Debugging", icon: "Bug" },
     { name: "Code Optimization", icon: "Zap" },
   ];
 

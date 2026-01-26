@@ -72,7 +72,7 @@ const Work = ({ isOpen, onClose }) => {
               My Work
             </h1>
             <p className="text-gray-300 text-xs sm:text-sm md:text-base animate-slide-in-left delay-200">
-              A showcase of creative solutions & digital experiences
+              A showcase of creative solutions and digital experiences
             </p>
           </div>
           <button

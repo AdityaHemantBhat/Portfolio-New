@@ -35,13 +35,13 @@ const Experience = () => {
 
           <div className="flex flex-wrap gap-2 md:gap-3">
             <span className="bg-black text-white px-4 md:px-6 py-2 md:py-3 rounded-full text-xs md:text-sm font-medium hover:scale-110 transition-all duration-300">
-              #Problem-solving
+              #Problem solving
             </span>
             <span className="bg-black text-white px-4 md:px-6 py-2 md:py-3 rounded-full text-xs md:text-sm font-medium hover:scale-110 transition-all duration-300">
-              #Research-driven
+              #Research driven
             </span>
             <span className="bg-black text-white px-4 md:px-6 py-2 md:py-3 rounded-full text-xs md:text-sm font-medium hover:scale-110 transition-all duration-300">
-              #Detail-oriented
+              #Detail oriented
             </span>
             <span className="bg-black text-white px-4 md:px-6 py-2 md:py-3 rounded-full text-xs md:text-sm font-medium hover:scale-110 transition-all duration-300">
               #Adaptability
