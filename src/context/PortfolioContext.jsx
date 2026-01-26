@@ -30,8 +30,8 @@ export const PortfolioProvider = ({ children }) => {
         "Responsive portfolio website with smooth animations and modern design principles. Built with React and Tailwind CSS featuring locomotive scroll, interactive elements, and optimized performance.",
       image: "/Portfolio.png",
       technologies: ["React", "Tailwind CSS", "Locomotive Scroll", "Vite"],
-      liveLink: "#",
-      githubLink: "https://github.com/AdityaHemantBhat/portfolio",
+      liveLink: "https://portfolio-new-one-pi.vercel.app/",
+      githubLink: "https://github.com/AdityaHemantBhat/Portfolio-New",
       category: "Frontend Development",
     },
     {
