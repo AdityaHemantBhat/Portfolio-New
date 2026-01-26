@@ -9,6 +9,7 @@ import Languages from "./components/Languages";
 import Hobbies from "./components/Hobbies";
 import Contact from "./components/Contact";
 import Work from "./components/Work";
+import Footer from "./components/Footer";
 
 function App() {
   const [isWorkOpen, setIsWorkOpen] = useState(false);
@@ -40,6 +41,7 @@ function App() {
         <Skills />
         <Languages />
         <Hobbies />
+        <Footer />
       </div>
 
       <Work isOpen={isWorkOpen} onClose={closeWork} />
