@@ -1,8 +1,58 @@
-import { Code, Database, Eye, Accessibility, Zap, Globe } from "lucide-react";
+import { Eye } from "lucide-react";
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiReact,
+  SiPhp,
+  SiMysql,
+} from "react-icons/si";
 import { usePortfolio } from "../context/PortfolioContext";
 
 function Skills() {
   const { skills } = usePortfolio();
+
+  const getTechIcon = (skillName) => {
+    switch (skillName.toLowerCase()) {
+      case "html":
+        return SiHtml5;
+      case "css":
+        return SiCss3;
+      case "javascript":
+        return SiJavascript;
+      case "react.js":
+        return SiReact;
+      case "php":
+        return SiPhp;
+      case "sql":
+        return SiMysql;
+      case "codeigniter 4":
+        return SiPhp; // Using PHP icon for CodeIgniter
+      default:
+        return SiJavascript; // Default fallback
+    }
+  };
+
+  const getIconColor = (skillName) => {
+    switch (skillName.toLowerCase()) {
+      case "html":
+        return "#E34F26"; // HTML orange
+      case "css":
+        return "#1572B6"; // CSS blue
+      case "javascript":
+        return "#F7DF1E"; // JavaScript yellow
+      case "react.js":
+        return "#61DAFB"; // React cyan
+      case "php":
+        return "#777BB4"; // PHP purple
+      case "sql":
+        return "#4479A1"; // MySQL blue
+      case "codeigniter 4":
+        return "#EF4223"; // CodeIgniter red
+      default:
+        return "#F7DF1E";
+    }
+  };
 
   return (
     <section className="bg-emerald-900 py-12 md:py-20 relative">
@@ -60,21 +110,22 @@ function Skills() {
               Coding skills
             </h3>
             <div className="space-y-3 md:space-y-4 text-white text-base md:text-lg">
-              {skills.coding.map((skill, index) => (
-                <div key={index} className="flex justify-between items-center">
-                  <div className="flex items-center gap-2">
-                    {skill.name === "HTML" || skill.name === "CSS" ? (
-                      <Globe size={16} />
-                    ) : skill.name === "SQL" ? (
-                      <Database size={16} />
-                    ) : (
-                      <Code size={16} />
-                    )}
-                    <span>{skill.name}</span>
+              {skills.coding.map((skill, index) => {
+                const IconComponent = getTechIcon(skill.name);
+                const iconColor = getIconColor(skill.name);
+                return (
+                  <div
+                    key={index}
+                    className="flex justify-between items-center"
+                  >
+                    <div className="flex items-center gap-2">
+                      <IconComponent size={16} style={{ color: iconColor }} />
+                      <span>{skill.name}</span>
+                    </div>
+                    <span className="text-yellow-400">{skill.level}</span>
                   </div>
-                  <span className="text-yellow-400">{skill.level}</span>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>

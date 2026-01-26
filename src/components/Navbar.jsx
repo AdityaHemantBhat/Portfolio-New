@@ -64,12 +64,14 @@ const Navbar = ({ onWorkClick, onContactClick }) => {
             >
               About me
             </button>
-            <button
-              onClick={() => scrollToSection("resume")}
+            <a
+              href="/Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-white hover:text-orange-300 transition-all duration-300 text-xs md:text-base hover:scale-105"
             >
               Resume
-            </button>
+            </a>
             <button
               onClick={onWorkClick}
               className="text-white hover:text-orange-300 transition-all duration-300 text-xs md:text-base hover:scale-105"
@@ -121,12 +123,14 @@ const Navbar = ({ onWorkClick, onContactClick }) => {
                 >
                   About me
                 </button>
-                <button
-                  onClick={() => scrollToSection("resume")}
+                <a
+                  href="/Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block w-full text-left text-white hover:text-orange-300 transition-colors py-3 text-lg border-b border-emerald-700/50"
                 >
                   Resume
-                </button>
+                </a>
                 <button
                   onClick={handleWorkClick}
                   className="block w-full text-left text-white hover:text-orange-300 transition-colors py-3 text-lg border-b border-emerald-700/50"

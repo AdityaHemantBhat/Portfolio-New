@@ -38,7 +38,9 @@ const Footer = ({ onWorkClick, onContactClick }) => {
                 About Me
               </a>
               <a
-                href="#resume"
+                href="/Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block text-gray-300 hover:text-yellow-400 transition-colors text-sm"
               >
                 Resume

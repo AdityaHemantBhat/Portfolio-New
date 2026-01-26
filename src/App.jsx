@@ -10,6 +10,7 @@ import Hobbies from "./components/Hobbies";
 import Contact from "./components/Contact";
 import Work from "./components/Work";
 import Footer from "./components/Footer";
+import BackToTop from "./components/BackToTop";
 
 function App() {
   const [isWorkOpen, setIsWorkOpen] = useState(false);
@@ -46,6 +47,7 @@ function App() {
 
       <Work isOpen={isWorkOpen} onClose={closeWork} />
       <Contact isOpen={isContactOpen} onClose={closeContact} />
+      <BackToTop />
     </PortfolioProvider>
   );
 }

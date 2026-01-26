@@ -18,7 +18,6 @@ const Work = ({ isOpen, onClose }) => {
     };
   }, [isOpen]);
 
-  // Handle horizontal scroll with mouse wheel (desktop only)
   useEffect(() => {
     const handleWheel = (e) => {
       if (scrollContainerRef.current && isOpen && window.innerWidth >= 768) {
@@ -88,7 +87,7 @@ const Work = ({ isOpen, onClose }) => {
         <div className="h-full overflow-hidden pt-4 relative z-10">
           <div
             ref={scrollContainerRef}
-            className="flex flex-col md:flex-row h-full overflow-y-auto md:overflow-x-auto md:overflow-y-hidden scrollbar-hide gap-4 md:gap-6 p-4 md:px-6 md:py-6"
+            className="flex flex-col md:flex-row h-full overflow-y-auto md:overflow-x-auto md:overflow-y-hidden scrollbar-hide gap-4 md:gap-6 p-4 md:px-6 md:py-6 custom-scroll"
             style={{ scrollBehavior: "smooth" }}
           >
             {projects.map((project, index) => (
