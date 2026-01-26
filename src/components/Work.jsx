@@ -208,15 +208,12 @@ const Work = ({ isOpen, onClose }) => {
               <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full animate-pulse delay-200"></div>
             </div>
           </div>
-          <div className="text-xs text-gray-300">
-            {projects.length} Projects Available
-          </div>
         </div>
 
         <div className="md:hidden flex justify-center py-4 text-white">
           <div className="bg-emerald-800/50 backdrop-blur-sm px-4 py-2 rounded-full">
             <span className="text-xs font-medium">
-              Scroll down to see all {projects.length} projects
+              Scroll down to see all projects
             </span>
           </div>
         </div>
