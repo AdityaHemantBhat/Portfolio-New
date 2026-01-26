@@ -87,7 +87,7 @@ export const PortfolioProvider = ({ children }) => {
     name: "Aditya Bhat",
     title: "Frontend Developer & Web Designer",
     location: "Goa, India",
-    email: "adityabhat37@gmail.com",
+    email: "aditya.bhat.dev@gmail.com",
     phone: "+91 9529644737",
     birthDate: "29-11-2001",
     nationality: "Indian",
