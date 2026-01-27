@@ -94,7 +94,7 @@ export const PortfolioProvider = ({ children }) => {
     bio: "I am a self taught Frontend Developer and Web Designer based in India, with strong experience in WordPress, Drupal, and modern JavaScript. I focus on building scalable, accessible, and performance driven web applications while maintaining clean UI and strong usability.",
     socialLinks: {
       github: "https://github.com/AdityaHemantBhat",
-      instagram: "https://www.instagram.com/adi__since2001/",
+      instagram: "https://www.instagram.com/aditya.bhat.dev/",
       linkedin: "https://www.linkedin.com/in/aditya-bhat-3661a8200/",
     },
   };

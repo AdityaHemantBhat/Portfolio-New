@@ -27,7 +27,7 @@ function Skills() {
       case "sql":
         return SiMysql;
       case "codeigniter 4":
-        return SiPhp; 
+        return SiPhp;
       default:
         return SiJavascript;
     }
@@ -36,19 +36,19 @@ function Skills() {
   const getIconColor = (skillName) => {
     switch (skillName.toLowerCase()) {
       case "html":
-        return "#E34F26"; 
+        return "#E34F26";
       case "css":
-        return "#1572B6"; 
+        return "#1572B6";
       case "javascript":
         return "#F7DF1E";
       case "react.js":
-        return "#61DAFB"; 
+        return "#61DAFB";
       case "php":
-        return "#777BB4"; 
+        return "#777BB4";
       case "sql":
         return "#4479A1";
       case "codeigniter 4":
-        return "#EF4223"; 
+        return "#EF4223";
       default:
         return "#F7DF1E";
     }
