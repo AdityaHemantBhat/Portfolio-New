@@ -14,6 +14,23 @@ export const PortfolioProvider = ({ children }) => {
   const projects = [
     {
       id: 1,
+      title: "Figma-Inspired Design Tool",
+      description:
+        "Interactive design tool inspired by Figma, built with JavaScript featuring canvas manipulation, text and rectangle creation, color customization, and layer management. Includes drag and drop functionality, real time editing, and intuitive UI for basic graphic design workflows.",
+      image: "/Figma_Style.png",
+      technologies: [
+        "HTML5",
+        "JavaScript",
+        "CSS3",
+        "DOM Manipulation",
+        "Event Handling",
+      ],
+      liveLink: "https://adityahemantbhat.github.io/Project-Figma-Style-/",
+      githubLink: "https://github.com/AdityaHemantBhat/Project-Figma-Style-",
+      category: "Interactive Application",
+    },
+    {
+      id: 2,
       title: "E-Commerce Platform",
       description:
         "Modern e-commerce platform built with React.js featuring complete shopping cart functionality, product browsing, add to cart, remove from cart, quantity management, and local storage persistence. Responsive design with clean UI and smooth user experience for online shopping.",
@@ -24,7 +41,7 @@ export const PortfolioProvider = ({ children }) => {
       category: "React Development",
     },
     {
-      id: 2,
+      id: 3,
       title: "Portfolio Website",
       description:
         "Responsive portfolio website with smooth animations and modern design principles. Built with React and Tailwind CSS featuring locomotive scroll, interactive elements, and optimized performance.",
@@ -35,7 +52,7 @@ export const PortfolioProvider = ({ children }) => {
       category: "Frontend Development",
     },
     {
-      id: 3,
+      id: 4,
       title: "Kanban Task Board",
       description:
         "Interactive Kanban board application built with vanilla HTML, CSS, and JavaScript featuring drag and drop functionality, task management, and local storage persistence. Clean UI with smooth animations and responsive design for efficient project workflow management.",
@@ -52,7 +69,7 @@ export const PortfolioProvider = ({ children }) => {
       category: "Vanilla JavaScript",
     },
     {
-      id: 4,
+      id: 5,
       title: "Restaurant Website",
       description:
         "Modern restaurant website built with pure HTML and CSS featuring elegant design, responsive layout, and smooth animations. Includes menu showcase, gallery section, contact information, and mobile first approach with clean typography and visual hierarchy.",
@@ -63,23 +80,6 @@ export const PortfolioProvider = ({ children }) => {
       githubLink:
         "https://github.com/AdityaHemantBhat/cohort-2.0/tree/main/Project%20-%20B",
       category: "Frontend Design",
-    },
-    {
-      id: 5,
-      title: "Figma-Inspired Design Tool",
-      description:
-        "Interactive design tool inspired by Figma, built with JavaScript featuring canvas manipulation, text and rectangle creation, color customization, and layer management. Includes drag and drop functionality, real time editing, and intuitive UI for basic graphic design workflows.",
-      image: "/Figma_Style.png",
-      technologies: [
-        "HTML5",
-        "JavaScript",
-        "CSS3",
-        "DOM Manipulation",
-        "Event Handling",
-      ],
-      liveLink: "https://adityahemantbhat.github.io/Project-Figma-Style-/",
-      githubLink: "https://github.com/AdityaHemantBhat/Project-Figma-Style-",
-      category: "Interactive Application",
     },
   ];
 

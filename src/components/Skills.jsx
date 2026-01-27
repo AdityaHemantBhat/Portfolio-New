@@ -27,28 +27,28 @@ function Skills() {
       case "sql":
         return SiMysql;
       case "codeigniter 4":
-        return SiPhp; // Using PHP icon for CodeIgniter
+        return SiPhp; 
       default:
-        return SiJavascript; // Default fallback
+        return SiJavascript;
     }
   };
 
   const getIconColor = (skillName) => {
     switch (skillName.toLowerCase()) {
       case "html":
-        return "#E34F26"; // HTML orange
+        return "#E34F26"; 
       case "css":
-        return "#1572B6"; // CSS blue
+        return "#1572B6"; 
       case "javascript":
-        return "#F7DF1E"; // JavaScript yellow
+        return "#F7DF1E";
       case "react.js":
-        return "#61DAFB"; // React cyan
+        return "#61DAFB"; 
       case "php":
-        return "#777BB4"; // PHP purple
+        return "#777BB4"; 
       case "sql":
-        return "#4479A1"; // MySQL blue
+        return "#4479A1";
       case "codeigniter 4":
-        return "#EF4223"; // CodeIgniter red
+        return "#EF4223"; 
       default:
         return "#F7DF1E";
     }
