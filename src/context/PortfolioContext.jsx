@@ -31,6 +31,23 @@ export const PortfolioProvider = ({ children }) => {
     },
     {
       id: 2,
+      title: "MacBook Clone",
+      description:
+        "Fully functional MacBook clone built with React.js and SCSS that replicates macOS experience. Features working terminal with real commands, GitHub integration, notes app, resume viewer, calendar functionality, Spotify player, and messaging system. Complete desktop environment with authentic macOS design and smooth interactions.",
+      image: "/Eco_Bazzar.png",
+      technologies: [
+        "React.js",
+        "SCSS",
+        "JavaScript",
+        "macOS UI",
+        "Terminal Commands",
+      ],
+      liveLink: "https://mac-clone-phi.vercel.app/",
+      githubLink: "https://github.com/AdityaHemantBhat/Mac_Clone",
+      category: "System Clone",
+    },
+    {
+      id: 3,
       title: "E-Commerce Platform",
       description:
         "Modern e-commerce platform built with React.js featuring complete shopping cart functionality, product browsing, add to cart, remove from cart, quantity management, and local storage persistence. Responsive design with clean UI and smooth user experience for online shopping.",
@@ -41,7 +58,7 @@ export const PortfolioProvider = ({ children }) => {
       category: "React Development",
     },
     {
-      id: 3,
+      id: 4,
       title: "Portfolio Website",
       description:
         "Responsive portfolio website with smooth animations and modern design principles. Built with React and Tailwind CSS featuring locomotive scroll, interactive elements, and optimized performance.",
@@ -52,7 +69,7 @@ export const PortfolioProvider = ({ children }) => {
       category: "Frontend Development",
     },
     {
-      id: 4,
+      id: 5,
       title: "Kanban Task Board",
       description:
         "Interactive Kanban board application built with vanilla HTML, CSS, and JavaScript featuring drag and drop functionality, task management, and local storage persistence. Clean UI with smooth animations and responsive design for efficient project workflow management.",
@@ -69,7 +86,7 @@ export const PortfolioProvider = ({ children }) => {
       category: "Vanilla JavaScript",
     },
     {
-      id: 5,
+      id: 6,
       title: "Restaurant Website",
       description:
         "Modern restaurant website built with pure HTML and CSS featuring elegant design, responsive layout, and smooth animations. Includes menu showcase, gallery section, contact information, and mobile first approach with clean typography and visual hierarchy.",
