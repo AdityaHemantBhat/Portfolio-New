@@ -34,7 +34,7 @@ export const PortfolioProvider = ({ children }) => {
       title: "MacBook Clone",
       description:
         "Fully functional MacBook clone built with React.js and SCSS that replicates macOS experience. Features working terminal with real commands, GitHub integration, notes app, resume viewer, calendar functionality, Spotify player, and messaging system. Complete desktop environment with authentic macOS design and smooth interactions.",
-      image: "/Eco_Bazzar.png",
+      image: "/Mac_Clone.png",
       technologies: [
         "React.js",
         "SCSS",
