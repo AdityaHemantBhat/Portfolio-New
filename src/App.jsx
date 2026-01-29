@@ -12,7 +12,7 @@ import Work from "./components/Work";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
 
-function App() {
+const App = () => {
   const [isWorkOpen, setIsWorkOpen] = useState(false);
   const [isContactOpen, setIsContactOpen] = useState(false);
 
@@ -50,6 +50,6 @@ function App() {
       <BackToTop />
     </PortfolioProvider>
   );
-}
+};
 
 export default App;
