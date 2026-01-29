@@ -1,11 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
 import { usePortfolio } from "../context/PortfolioContext";
+import SmokeEffect from "./SmokeEffect";
+import PressureCookerButton from "./PressureCookerButton";
 
 const Navbar = ({ onWorkClick, onContactClick }) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { personalInfo } = usePortfolio();
+  const desktopButtonRef = useRef(null);
+  const mobileButtonRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,6 +44,8 @@ const Navbar = ({ onWorkClick, onContactClick }) => {
 
   return (
     <>
+      <SmokeEffect triggerRef={desktopButtonRef} />
+      <SmokeEffect triggerRef={mobileButtonRef} />
       <nav
         className={`fixed top-0 left-0 right-0 z-50 px-4 md:px-8 py-4 md:py-6 transition-all duration-500 animate-fade-in ${
           scrolled
@@ -78,25 +84,10 @@ const Navbar = ({ onWorkClick, onContactClick }) => {
             >
               Work
             </button>
-            <button
+            <PressureCookerButton
               onClick={onContactClick}
-              className="bg-yellow-400 text-black px-3 md:px-6 py-1.5 md:py-2 rounded-full font-medium hover:bg-yellow-300 transition-all duration-300 text-xs md:text-base hover:scale-105 hover:shadow-lg relative overflow-visible group"
-            >
-              <span className="relative z-10">Let's Cook!</span>
-              <div className="absolute -top-3 left-1/4 w-2 h-2 bg-gray-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping"></div>
-              <div
-                className="absolute -top-4 left-1/2 w-1.5 h-1.5 bg-gray-500 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-bounce"
-                style={{ animationDelay: "0.2s" }}
-              ></div>
-              <div
-                className="absolute -top-3 right-1/4 w-1 h-1 bg-gray-300 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping"
-                style={{ animationDelay: "0.4s" }}
-              ></div>
-              <div
-                className="absolute -top-5 left-2/3 w-1 h-1 bg-gray-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-bounce"
-                style={{ animationDelay: "0.6s" }}
-              ></div>
-            </button>
+              ref={desktopButtonRef}
+            />
           </div>
 
           <button
@@ -137,25 +128,10 @@ const Navbar = ({ onWorkClick, onContactClick }) => {
                 >
                   Work
                 </button>
-                <button
+                <PressureCookerButton
                   onClick={handleContactClick}
-                  className="block w-full bg-yellow-400 text-black px-6 py-3 rounded-full font-medium hover:bg-yellow-300 transition-colors text-lg mt-6 relative overflow-visible group"
-                >
-                  <span className="relative z-10">Let's Cook!</span>
-                  <div className="absolute -top-3 left-1/4 w-2 h-2 bg-gray-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping"></div>
-                  <div
-                    className="absolute -top-4 left-1/2 w-1.5 h-1.5 bg-gray-500 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-bounce"
-                    style={{ animationDelay: "0.2s" }}
-                  ></div>
-                  <div
-                    className="absolute -top-3 right-1/4 w-1 h-1 bg-gray-300 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping"
-                    style={{ animationDelay: "0.4s" }}
-                  ></div>
-                  <div
-                    className="absolute -top-5 left-2/3 w-1 h-1 bg-gray-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-bounce"
-                    style={{ animationDelay: "0.6s" }}
-                  ></div>
-                </button>
+                  ref={mobileButtonRef}
+                />
               </div>
             </div>
           </div>
