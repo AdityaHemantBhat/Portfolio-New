@@ -55,7 +55,7 @@ function Skills() {
   };
 
   return (
-    <section className="bg-emerald-900 py-12 md:py-20 relative">
+    <section id="skills" className="bg-emerald-900 py-12 md:py-20 relative">
       <div className="absolute left-0 top-1/2 transform -translate-y-1/2 opacity-10 hidden lg:block">
         <div className="text-[6rem] lg:text-[8rem] font-serif text-white leading-none">
           TECHNICAL

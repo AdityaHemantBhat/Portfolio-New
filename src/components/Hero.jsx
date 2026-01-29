@@ -5,7 +5,10 @@ import { usePortfolio } from "../context/PortfolioContext";
 const Hero = ({ onWorkClick, onContactClick }) => {
   const { personalInfo } = usePortfolio();
   return (
-    <section className="min-h-screen bg-linear-to-b from-emerald-900 via-emerald-900 to-stone-100 relative overflow-hidden">
+    <section
+      className="min-h-screen bg-linear-to-b from-emerald-900 via-emerald-900 to-stone-100 relative overflow-hidden"
+      id="hero"
+    >
       <Navbar onWorkClick={onWorkClick} onContactClick={onContactClick} />
 
       <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none animate-float">

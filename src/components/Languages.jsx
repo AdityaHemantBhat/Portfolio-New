@@ -4,7 +4,7 @@ function Languages() {
   const { languages } = usePortfolio();
 
   return (
-    <section className="bg-stone-100 py-12 md:py-20">
+    <section id="languages" className="bg-stone-100 py-12 md:py-20">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-black mb-8 md:mb-16">
           Languages

@@ -11,6 +11,8 @@ import Contact from "./components/Contact";
 import Work from "./components/Work";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
+import PageLoader from "./components/PageLoader";
+import ScrollProgress from "./components/ScrollProgress";
 
 const App = () => {
   const [isWorkOpen, setIsWorkOpen] = useState(false);
@@ -34,6 +36,8 @@ const App = () => {
 
   return (
     <PortfolioProvider>
+      <PageLoader />
+      <ScrollProgress />
       <div className="min-h-screen">
         <Hero onWorkClick={openWork} onContactClick={openContact} />
         <About />

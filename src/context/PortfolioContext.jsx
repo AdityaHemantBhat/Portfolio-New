@@ -129,14 +129,12 @@ export const PortfolioProvider = ({ children }) => {
       degree: "HSSC - 12th",
       institution: "S.S.Angle Higher Secondary School - Dapot",
       period: "2017-2019",
-      percentage: "57.33%",
     },
     {
       id: 3,
       degree: "SSC - 10th",
       institution: "Shri Nirakar High School - Mashem",
       period: "2011-2017",
-      percentage: "75.50%",
     },
   ];
 
