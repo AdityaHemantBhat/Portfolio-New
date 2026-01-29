@@ -40,7 +40,7 @@ const ScrollProgress = () => {
   }, []);
 
   return (
-    <div className="fixed right-0 top-0 w-1 h-screen z-[9999] bg-emerald-900/10 pointer-events-none">
+    <div className="fixed right-0 top-0 w-1 md:w-1 h-screen z-9999 bg-emerald-900/10 pointer-events-none">
       <div
         className="w-full bg-linear-to-b from-yellow-400 via-orange-400 to-yellow-400 transition-all duration-200 ease-out"
         style={{
@@ -51,7 +51,7 @@ const ScrollProgress = () => {
       />
 
       <div
-        className="absolute right-0 w-2 h-2 bg-yellow-400 rounded-full transition-all duration-200"
+        className="absolute right-0 w-2 md:w-1.5 h-2 md:h-1.5 bg-yellow-400 rounded-full transition-all duration-200"
         style={{
           top: `${scrollProgress}%`,
           transform: "translateY(-50%) translateX(50%)",
@@ -61,11 +61,12 @@ const ScrollProgress = () => {
       />
 
       <div
-        className="absolute right-8 text-[10px] md:text-xs font-medium text-yellow-400 whitespace-nowrap transition-all duration-300 pointer-events-auto -z-10"
+        className="absolute right-8 text-[10px] md:text-xs font-medium text-yellow-400 whitespace-nowrap transition-all duration-300 pointer-events-none"
         style={{
           top: `${scrollProgress}%`,
           transform: "translateY(-50%)",
-          opacity: scrollProgress > 5 && scrollProgress < 95 ? 1 : 0,
+          opacity: 0,
+          zIndex: -9999,
         }}
       >
         {currentSection}

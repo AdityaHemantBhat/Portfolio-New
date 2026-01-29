@@ -103,12 +103,16 @@ const Footer = ({ onWorkClick, onContactClick }) => {
 
         <div className="border-t border-emerald-700/50 pt-6">
           <div className="flex justify-center items-center">
-            <div className="flex items-center gap-1 text-gray-300 text-sm">
+            <div className="flex flex-wrap justify-center items-center gap-1 text-gray-300 text-xs sm:text-sm">
               <span>
-                © {currentYear} {personalInfo.name}. Made with
+                © {currentYear} {personalInfo.name}.
               </span>
-              <Heart size={14} className="text-red-400 animate-pulse" />
-              <span>in India. All rights reserved.</span>
+              <span className="flex items-center gap-1">
+                Made with
+                <Heart size={14} className="text-red-400 animate-pulse" />
+                in India.
+              </span>
+              <span>All rights reserved.</span>
             </div>
           </div>
         </div>

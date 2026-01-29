@@ -201,6 +201,7 @@ export const PortfolioProvider = ({ children }) => {
     { name: "Building Side Projects", icon: "Code" },
     { name: "Bug Hunting and Debugging", icon: "Bug" },
     { name: "Code Optimization", icon: "Zap" },
+    { name: "Web Performance", icon: "Code" },
   ];
 
   const value = {

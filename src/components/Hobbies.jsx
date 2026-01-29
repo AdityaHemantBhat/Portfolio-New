@@ -28,7 +28,7 @@ function Hobbies() {
           Coding Interests
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 justify-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8 justify-items-center">
           {hobbies.map((hobby, index) => {
             const IconComponent = getIcon(hobby.icon);
             return (

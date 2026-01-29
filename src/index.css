@@ -333,3 +333,24 @@ html {
   animation: fold-out 0.8s ease-in forwards;
   transform-origin: top;
 }
+
+/* Disable text selection */
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Allow selection only for specific elements if needed */
+p,
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  user-select: none;
+}
