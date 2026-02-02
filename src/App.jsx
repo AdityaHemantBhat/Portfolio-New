@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { PortfolioProvider } from "./context/PortfolioContext";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -52,6 +53,7 @@ const App = () => {
       <Work isOpen={isWorkOpen} onClose={closeWork} />
       <Contact isOpen={isContactOpen} onClose={closeContact} />
       <BackToTop />
+      <SpeedInsights />
     </PortfolioProvider>
   );
 };
